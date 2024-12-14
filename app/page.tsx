@@ -109,7 +109,8 @@ export default function Home() {
           if (parsedError.responseData) {
             errorMessage += ` - ${parsedError.responseData}`;
           }
-        } catch (parseError) {
+        } catch (error) {
+          console.log(error);
           // If parsing fails, use the original error message
         }
       }
